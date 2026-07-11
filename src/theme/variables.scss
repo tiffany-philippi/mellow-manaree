@@ -1,2 +1,225 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+// ============================================================
+// Mellow — Theme Variables
+// Manaree · No guilt, just balance.
+// ============================================================
+
+// ------------------------------------------------------------
+// Brand Colors
+// ------------------------------------------------------------
+
+// Primária — Peach
+$peach-50: #FDF0EA;
+$peach-100: #FAD9C8;
+$peach-200: #F7C4A8;
+$peach-400: #F2A98A; // CTA, botões primários, progress bars
+$peach-text: #7A3A1E; // texto sobre peach
+
+// Secundária — Sage
+$sage-50: #EDF5EF;
+$sage-100: #C8DECC;
+$sage-200: #A8C9AE;
+$sage-400: #7A9E82; // ícones, elementos secundários, botão sage
+$sage-600: #5A7A62; // outline da Naree
+$sage-text: #1E3D24; // texto sobre sage
+
+// Cream — Fundos
+$cream-50: #FFFCFA;
+$cream-100: #FDF7F2; // fundo principal da página
+$cream-200: #FAF1E8;
+$cream-400: #F5EBE0; // fundo de cards, tags
+
+// ------------------------------------------------------------
+// Macronutrientes
+// ------------------------------------------------------------
+
+$macro-protein-bg: #FDF0EA;
+$macro-protein-text: #7A3A1E;
+$macro-protein-bar: #F2A98A; // peach
+
+$macro-carbs-bg: #EDF5EF;
+$macro-carbs-text: #2E5E38;
+$macro-carbs-bar: #B8D4C8; // sage claro
+
+$macro-fat-bg: #FDF6E8;
+$macro-fat-text: #5A3E00;
+$macro-fat-bar: #E8C87A; // âmbar suave
+
+$macro-fiber-bg: #EAF3DE;
+$macro-fiber-text: #27500A;
+$macro-fiber-bar: #97C459; // verde
+
+// ------------------------------------------------------------
+// Neutros — Textos e Superfícies
+// ------------------------------------------------------------
+
+$gray-900: #2C2C2A; // texto primário
+$gray-400: #888780; // texto secundário
+$gray-200: #D3D1C7; // texto desabilitado, bordas
+$gray-100: #E8DDD4; // bordas padrão
+$gray-50: #F1EFE8; // separadores
+
+// Superfícies Light Mode
+$surface-page: #FDF7F2; // cream-100 — fundo da página
+$surface-card: #FFFFFF; // cards
+$surface-input: #FFFFFF; // inputs
+$surface-tag: #F5EBE0; // cream-400 — tags, chips background
+
+// ------------------------------------------------------------
+// Dark Mode — Superfícies
+// ------------------------------------------------------------
+
+$dark-surface-0: #1A1A18; // fundo página
+$dark-surface-1: #2A2A27; // cards, bottom nav
+$dark-surface-2: #363633; // inputs, dividers
+$dark-text-primary: #F1EFE8;
+$dark-text-secondary: #D3D1C7;
+
+// ------------------------------------------------------------
+// Semânticas — Feedback
+// ------------------------------------------------------------
+
+$color-success: #639922;
+$color-success-bg: #EAF3DE;
+$color-success-text: #27500A;
+
+$color-danger: #E24B4A;
+$color-danger-bg: #FCEBEB;
+$color-danger-text: #501313;
+
+$color-warning: #EF9F27;
+$color-warning-bg: #FAEEDA;
+$color-warning-text: #5A3E00;
+
+// Card "after this bite"
+$after-bite-bg: #EDF5EF;
+$after-bite-border: #C8DECC;
+$after-bite-text: #2E5E38;
+
+// ------------------------------------------------------------
+// Ionic Overrides — mapeando pro sistema do Ionic
+// ------------------------------------------------------------
+
+:root {
+    // Primária
+    --ion-color-primary: #{$peach-400};
+    --ion-color-primary-rgb: 242, 169, 138;
+    --ion-color-primary-contrast: #{$peach-text};
+    --ion-color-primary-shade: #d4937a;
+    --ion-color-primary-tint: #{$peach-200};
+
+    // Secundária
+    --ion-color-secondary: #{$sage-400};
+    --ion-color-secondary-rgb: 122, 158, 130;
+    --ion-color-secondary-contrast: #{$sage-text};
+    --ion-color-secondary-shade: #6a8b72;
+    --ion-color-secondary-tint: #{$sage-200};
+
+    // Sucesso
+    --ion-color-success: #{$color-success};
+    --ion-color-success-rgb: 99, 153, 34;
+    --ion-color-success-contrast: #ffffff;
+    --ion-color-success-shade: #57861e;
+    --ion-color-success-tint: #{$color-success-bg};
+
+    // Perigo
+    --ion-color-danger: #{$color-danger};
+    --ion-color-danger-rgb: 226, 75, 74;
+    --ion-color-danger-contrast: #ffffff;
+    --ion-color-danger-shade: #c74241;
+    --ion-color-danger-tint: #{$color-danger-bg};
+
+    // Warning
+    --ion-color-warning: #{$color-warning};
+    --ion-color-warning-rgb: 239, 159, 39;
+    --ion-color-warning-contrast: #{$macro-fat-text};
+    --ion-color-warning-shade: #d28c22;
+    --ion-color-warning-tint: #{$color-warning-bg};
+
+    // Fundo e texto globais
+    --ion-background-color: #{$surface-page};
+    --ion-background-color-rgb: 253, 247, 242;
+    --ion-text-color: #{$gray-900};
+    --ion-text-color-rgb: 44, 44, 42;
+
+    // Bordas e separadores
+    --ion-border-color: #{$gray-100};
+    --ion-item-border-color: #{$gray-100};
+
+    // Bottom Tab Bar
+    --ion-tab-bar-background: #{$surface-card};
+    --ion-tab-bar-border-color: #{$gray-100};
+    --ion-tab-bar-color: #{$gray-400};
+    --ion-tab-bar-color-selected: #{$sage-400};
+
+    // Toolbar / Header
+    --ion-toolbar-background: #{$surface-page};
+    --ion-toolbar-color: #{$gray-900};
+    --ion-toolbar-border-color: #{$gray-100};
+
+    // Cards
+    --ion-card-background: #{$surface-card};
+
+    // Custom tokens Mellow
+    --mellow-peach: #{$peach-400};
+    --mellow-peach-light: #{$peach-100};
+    --mellow-peach-bg: #{$peach-50};
+    --mellow-peach-text: #{$peach-text};
+
+    --mellow-sage: #{$sage-400};
+    --mellow-sage-light: #{$sage-200};
+    --mellow-sage-bg: #{$sage-50};
+    --mellow-sage-text: #{$sage-text};
+
+    --mellow-cream: #{$cream-100};
+    --mellow-cream-card: #{$cream-400};
+
+    --mellow-text-primary: #{$gray-900};
+    --mellow-text-secondary: #{$gray-400};
+    --mellow-text-muted: #{$gray-200};
+
+    --mellow-border: #{$gray-100};
+    --mellow-divider: #{$gray-50};
+
+    --mellow-macro-protein: #{$peach-400};
+    --mellow-macro-carbs: #B8D4C8;
+    --mellow-macro-fat: #{$macro-fat-bar};
+    --mellow-macro-fiber: #{$macro-fiber-bar};
+
+    --mellow-success: #{$color-success};
+    --mellow-danger: #{$color-danger};
+    --mellow-warning: #{$color-warning};
+
+    --mellow-after-bite-bg: #{$after-bite-bg};
+    --mellow-after-bite-border: #{$after-bite-border};
+    --mellow-after-bite-text: #{$after-bite-text};
+
+    // Border radius padrão
+    --mellow-radius-sm: 8px;
+    --mellow-radius-md: 12px;
+    --mellow-radius-lg: 16px;
+    --mellow-radius-pill: 100px;
+}
+
+// ------------------------------------------------------------
+// Dark Mode
+// ------------------------------------------------------------
+
+// @media (prefers-color-scheme: dark) {
+//     :root {
+//         --ion-background-color: #{$dark-surface-0};
+//         --ion-background-color-rgb: 26, 26, 24;
+//         --ion-text-color: #{$dark-text-primary};
+//         --ion-text-color-rgb: 241, 239, 232;
+
+//         --ion-toolbar-background: #{$dark-surface-1};
+//         --ion-tab-bar-background: #{$dark-surface-1};
+//         --ion-card-background: #{$dark-surface-1};
+//         --ion-border-color: #{$dark-surface-2};
+
+//         --mellow-cream: #{$dark-surface-0};
+//         --mellow-cream-card: #{$dark-surface-1};
+//         --mellow-text-primary: #{$dark-text-primary};
+//         --mellow-text-secondary: #{$dark-text-secondary};
+//         --mellow-border: #{$dark-surface-2};
+//     }
+// }
