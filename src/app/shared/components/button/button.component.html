@@ -1,0 +1,9 @@
+<ion-button class="mellow-button" expand="block" [fill]="fill"
+  [ngClass]="[
+    type, 
+    disabled ? 'disabled' : '', 
+    icon ? 'iconButton' : '']
+    " (click)="clicked()" [disabled]="disabled">
+  <ion-icon slot="end" *ngIf="hasIcon" [name]="icon"></ion-icon>
+  {{ text }}
+</ion-button>

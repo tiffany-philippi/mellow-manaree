@@ -139,6 +139,7 @@ $after-bite-text: #2E5E38;
     --ion-background-color: #{$surface-page};
     --ion-background-color-rgb: 253, 247, 242;
     --ion-text-color: #{$gray-900};
+    --ion-clear-text-color: #{$surface-input};
     --ion-text-color-rgb: 44, 44, 42;
 
     // Bordas e separadores
@@ -178,7 +179,8 @@ $after-bite-text: #2E5E38;
     --mellow-text-muted: #{$gray-200};
 
     --mellow-border: #{$gray-100};
-    --mellow-divider: #{$gray-50};
+    --mellow-divider: #{$gray-50};--mellow-disabled-background: #{$gray-50};
+    --mellow-disabled-text: #{$gray-400};
 
     --mellow-macro-protein: #{$peach-400};
     --mellow-macro-carbs: #B8D4C8;
