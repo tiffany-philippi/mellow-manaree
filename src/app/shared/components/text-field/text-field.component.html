@@ -1,0 +1,18 @@
+<ion-input 
+	mode="md"
+	class="mellow-input"
+	[disabled]="disabled"
+	[label]="label" 
+	fill="outline" 
+	labelPlacement="stacked" 
+	[helperText]="helperText"
+	[errorText]="errorText" 
+	[placeholder]="placeholder" 
+	[type]="inputType" 
+	[(ngModel)]="value">
+	@if (type === 'password') {
+		<ion-button fill="clear" (click)="togglePassword()" slot="end" [aria-label]="showPassword ? 'Hide password' : 'Show password'">
+			<ion-icon slot="icon-only" [name]="showPassword ? 'eye-off' : 'eye'" aria-hidden="true"></ion-icon>
+		</ion-button>
+	}
+</ion-input> 

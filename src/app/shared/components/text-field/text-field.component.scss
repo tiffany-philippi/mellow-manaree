@@ -1,0 +1,12 @@
+ion-input {
+    --highlight-color-focused: var(--mellow-sage);
+    --highlight-color-valid: var(--mellow-success);
+    --highlight-color-invalid: var(--mellow-danger);
+    --border-color: var(--mellow-border);
+    --border-radius: var(--mellow-radius-md);
+    --placeholder-color: var(--mellow-text-muted);
+    --placeholder-opacity: 1;
+    --color: var(--mellow-text-primary);
+    --background: #ffffff;
+    --label-color: var(--mellow-text-secondary);
+}
