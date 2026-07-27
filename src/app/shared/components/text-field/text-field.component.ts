@@ -19,6 +19,7 @@ export class TextFieldComponent implements OnInit {
   @Input() helperText: string = '';
   @Input() errorText: string = '';
   @Input() disabled: boolean = false;
+  @Input() required: boolean = true;
   @Input() value: string = '';
 
   inputType: string = 'text';
