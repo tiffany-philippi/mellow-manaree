@@ -7,11 +7,6 @@
     --background: var(--ion-color-primary);
     --color: var(--ion-color-primary-contrast);
 
-    &.disabled {
-        --background: var(--mellow-disabled-background);
-        --color: var(--mellow-disabled-text);
-    }
-
     &.primary-sm {
         height: 40px;
         font-size: 16px;
@@ -26,6 +21,12 @@
         --background: transparent;
         --color: var(--ion-color-secondary);
     }
+    
+    &.disabled {
+        --background: var(--mellow-disabled-background);
+        --color: var(--mellow-disabled-text);
+    }
+    
     &.iconButton {
         text-transform: uppercase;
     }
